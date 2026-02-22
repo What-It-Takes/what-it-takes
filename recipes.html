@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipes | What It Takes</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="brand">WHAT IT TAKES</div>
+    <nav class="links">
+      <a href="index.html">Home</a>
+      <a href="recipes.html" class="active">Recipes</a>
+      <a href="coaching.html">Coaching</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h2>Recipes</h2>
+      <p class="subhead">High-protein, repeatable, no-BS meals.</p>
+
+      <div class="grid3">
+        <a class="panel" href="#">
+          <h3>Aries Protein Bowl</h3>
+          <p>Chicken, rice, veg, sauce — macro-friendly.</p>
+        </a>
+        <a class="panel" href="#">
+          <h3>Greek God Overnight Oats</h3>
+          <p>Fast breakfast, high protein, low effort.</p>
+        </a>
+        <a class="panel" href="#">
+          <h3>Cutting Chili</h3>
+          <p>Big volume, simple ingredients.</p>
+        </a>
+      </div>
+
+      <p class="subhead" style="margin-top:16px;">
+        (Next: we can make each recipe its own page with ingredients + macros.)
+      </p>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> What It Takes</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
